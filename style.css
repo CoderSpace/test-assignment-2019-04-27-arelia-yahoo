@@ -1,0 +1,216 @@
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  font-family: sans-serif;
+  width: 90%;
+  margin: auto;
+}
+
+svg.coderspace-logo {
+  width: 10em;
+  position: relative;
+  left: -0.3em;
+  float: left;
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: 2.5em;
+  line-height: 3em;
+}
+
+
+
+/*NAV*/
+
+nav {
+  margin: 20px auto;
+  padding: 20px;
+  border: 5px solid #ddd;
+}
+
+div.btn-group:before{
+    display: inline-block;
+    min-width: 150px;
+    float: left;
+    margin-right: 15px;
+    padding: 10px 0;
+    font-weight: bold;
+    text-align: right;
+    content: " ";
+
+}
+
+div#gender:before {
+    content: "Filter By Gender: ";
+}
+
+div#team:before {
+    content: "Filter By Team: ";
+}
+
+div#state:before {
+    content: "Filter By Status: ";
+}
+
+div#year:before {
+  content: "Filter By Year: ";
+}
+
+div#clear {
+  margin-top: 30px;
+}
+
+a#clear-all {
+  padding: 10px 30px;
+  border-color: #888;
+  color: #888;
+}
+
+a:hover#clear-all {
+  border-color: #333;
+  color: #fff;
+  background-color: #888;
+}
+
+.btn-group {
+  margin: 15px 0;
+}
+
+.btn-group a {
+    cursor: pointer;
+    padding: 10px 15px;
+    border: 1px solid gray;
+    margin: 0;
+    text-decoration: none;
+    float: left;
+    color: black;
+}
+
+#gender a {
+  background-color: rgba(102, 51, 153, 0.3);;
+}
+
+#gender a:hover {
+  background-color: rgba(102, 51, 153, 0.5);;
+}
+
+#gender a.active {
+  background-color: rgba(102, 51, 153, 0.9);;
+}
+
+#team a {
+  background-color: rgba(255, 183, 6, 0.3);
+}
+
+#team a:hover {
+  background-color: rgba(255, 183, 6, 0.5);
+}
+
+#team a.active {
+  background-color: rgba(255, 183, 6, 0.9);
+}
+
+#state a {
+  background-color: rgba(74, 164, 228, 0.3);
+}
+
+#state a:hover {
+  background-color: rgba(74, 164, 228, 0.5);
+}
+
+#state a.active {
+  background-color: rgba(74, 164, 228, 0.9);
+}
+
+#year a {
+  background-color: rgba(0, 136, 1, 0.3);
+}
+
+#year a:hover {
+  background-color: rgba(0, 136, 1, 0.5);
+}
+
+#year a.active {
+  background-color: rgba(0, 136, 1, 0.9);
+}
+
+.btn-group a:not(:first-child) {
+    border-left: 0;
+}
+
+.btn-group a:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.btn-group a:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/*STUDENT INFO*/
+
+.students {
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.studentInfo {
+  text-align: center;
+}
+
+.studentInfo img {
+  width: 250px;
+  margin: 10px 10px 0;
+}
+
+.studentInfo p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 815px) {
+  nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  div.btn-group:before {
+    width: 100%;
+    text-align: left;
+  }
+
+}
+
+@media (max-width: 600px) {
+  svg.coderspace-logo {
+    float: none;
+    left: -0.6em;
+  }
+
+  h1 {
+  line-height: normal;
+  }
+
+  .btn-group a {
+    display: inline-block;
+    margin: 5px 0;
+    float: none;
+    border-radius: 4px;
+  }
+
+  .btn-group a:not(:first-child) {
+    border-left: 1px solid gray;
+  }
+}
